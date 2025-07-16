@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ד"ר פין - פתרונות גדולים לבעיות קטנות</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Alef', sans-serif;
+            background: linear-gradient(120deg, #340c24, #500e2f);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+            header h1 {
+                font-size: 48px;
+                margin-bottom: 10px;
+                animation: pulse 2s infinite;
+            }
+
+            header h2 {
+                font-size: 32px;
+                color: #ffccdd;
+            }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .image-box {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bounceInLeft 1.5s;
+        }
+
+            .image-box img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 16px;
+                box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            }
+
+        .text-box {
+            flex: 1;
+            min-width: 300px;
+            animation: bounceInRight 1.5s;
+        }
+
+            .text-box p {
+                font-size: 20px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+        .cta-button {
+            background: #ff9933;
+            color: #fff;
+            padding: 18px 32px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+            .cta-button:hover {
+                background: #cc6600;
+            }
+
+        .bonus {
+            margin-top: 20px;
+            font-size: 18px;
+            background: #ffffff22;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+            padding: 20px;
+            background-color: #2a0b1f;
+        }
+
+        .testimonials {
+            padding: 40px 20px;
+            background-color: #40102d;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+            .testimonials h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+        .testimonial {
+            font-size: 18px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>היא אומרת שהאיבר שלך קטן מידי?</h1>
+        <h2>ד"ר פין כאן עם פתרון ענק!</h2>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="drfin.png" alt="דוקטור פין">
+        </div>
+        <div class="text-box">
+            <p>הקטן לא עושה את העבודה? האישה לא מרוצה? 🧐</p>
+            <p><strong>ד"ר פין</strong>, מומחה לרפואת גברים, מציע לך את הפתרון שלא תמצא בשום מקום אחר –</p>
+            <p>התקשר עכשיו וקבל <strong>הארכה לגבר שלך</strong> + שובר מתנה לניתוח ניסיון!</p>
+            <p class="bonus">🎁 במתנה: אינץ' נוסף לגבר שבך + ציפורן חיזוק לביטחון העצמי</p>
+            <button class="cta-button" onclick="alert('התקשר ל- *פין 6969* היום!')">אני רוצה להתארך!</button>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h3>מה הלקוחות אומרים:</h3>
+        <div class="testimonial">"חשבתי שזה מאוחר מדי בשבילי. היום אני מרגיש כמו סר גלגדוט!" – מיקי, ראשון לציון</div>
+        <div class="testimonial">"האישה לא האמינה, השכנה קראה למשטרה." – דויד, חיפה</div>
+        <div class="testimonial">"עברתי לשם חדש כדי להתחיל מהתחלה. תודה ד"ר פין!" – יוסי, הרצליה</div>
+    </div>
+
+    <footer>
+        *השובר בכפוף לתקנון ועד הגמירה של המלאי. אין להשאיר סימני אהבה על הקופון (לרבות נזילות רגשיות).<br>
+        אם האיבר עשה עבודה טובה מידי – ניתוח חוזר להעברת אינץ' לאוזן כלול. לא בתוקף לעדת הגמדים.<br>
+        אתר הומוריסטי בלבד. אין לראות במידע המלצה רפואית (או בכלל).
+    </footer>
+
+</body>
+</html>
